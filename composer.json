@@ -1,0 +1,23 @@
+{
+    "name": "micro/php",
+    "authors": [
+      {
+        "name": "CoolDeavil",
+        "email": "c.miguel.pcs@gmail.com"
+      }
+    ],
+  "scripts": {
+    "php": "php -S localhost:8000 -d display_errors=1 -t public/"
+  },
+    "autoload": {
+      "psr-4": {
+        "API\\": "Micro"
+      }
+    },
+    "require": {
+      "guzzlehttp/psr7": "^2.1",
+      "http-interop/response-sender": "^1.0",
+      "psr/http-message": "^1.0"
+    }
+  }
+  

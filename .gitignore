@@ -1,0 +1,7 @@
+.idea
+composer.lock
+vendor/
+public/
+node_modules/
+Micro/logs
+package-lock.json
