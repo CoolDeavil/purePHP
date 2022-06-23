@@ -3,16 +3,24 @@
 
 namespace API\Core\Render;
 
+use API\Core\Container\MicroDI;
+use API\Core\Utils\Translate;
 use API\Models\RenderFunction;
+use JetBrains\PhpStorm\Pure;
 
 class PHPRenderExtensions
 {
+    public function __construct(MicroDI $ioc)
+    {
+        $this->ioc = $ioc;
+    }
 
-    public function getFunctions() : array
+    #[Pure] public function getFunctions() : array
     {
         return [
             new RenderFunction('asset',[$this,'asset']),
             new RenderFunction('bolder',[$this,'bolder']),
+            new RenderFunction('trans',[$this,'translate']),
         ];
     }
     public function parseRule(string $rule): array
@@ -30,7 +38,16 @@ class PHPRenderExtensions
     }
     public function bolder(string $element, $params = []): string
     {
-        return '<strong style="color: #006d6d;">' .$element .'</strong>' ;
+        return '<strong style="color: orangered;">' .$element .'</strong>' ;
+    }
+    public function translate($key): ?string
+    {
+        if ($key === null || $key === '') {
+            return null;
+        }
+        /**@var $tr Translate */
+        $tr = $this->ioc->get(Translate::class);
+        return $tr->translate($key);
     }
 
 }

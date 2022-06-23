@@ -22,6 +22,7 @@ $appText = [
     'MICRO_PHP' => 'MicroPHP',
     'DROPDOWN' => 'DropDown',
     'DROPDOWN2' => 'Demos',
+    'TRANSLATE' => "C'est un sport qui repose sur le travail d'équipe et promet du spectacle – mais rarement comme ça. Les championnats du monde aquatiques ont été le théâtre d'un sauvetage dramatique dans la vie réelle lorsque la nageuse artistique américaine Anita Alvarez a dû être tirée hors de l'eau par son entraîneur après avoir perdu connaissance et coulé au fond de la piscine.",
 
 
 

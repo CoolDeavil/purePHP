@@ -55,7 +55,8 @@ if($router->dispatch($request)){
 
 }else {
 
-    $view = $render->render('404');
+
+    $view = $render->render('404',['ip' =>  $request->getUri()->getPath()]);
     $response = new Response();
     $response->getBody()->write($view);
 }

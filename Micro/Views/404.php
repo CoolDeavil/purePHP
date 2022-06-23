@@ -5,5 +5,8 @@ use API\Core\Render\PHPRender;
 ?>
 <?= $renderer->render('layout/header')  ?>
 <div class="sectionSeparator"></div>
-<div class="err"></div>
+<div class="err">
+    <hr>
+    Failed URL: <strong style="color: crimson"><?= $params['ip']  ?></strong>
+</div>
 <?= $renderer->render('layout/footer')  ?>

@@ -23,7 +23,6 @@ $router->post('/api/switch', function(Request $request, Response $response) use(
     ];
     Session::set('ACTIVE_LANG', $request->getParsedBody()['language']);
     Session::set('LOCALE', $locales[$request->getParsedBody()['language']]);
-    //$this->setToastCookie('Language Changed to ' . strtoupper($request->getParsedBody()['language']), 'info', 5000);
     return (new Response())
         ->withStatus(200)
         ->withHeader('Location', Session::get('LAST_INTENT'));

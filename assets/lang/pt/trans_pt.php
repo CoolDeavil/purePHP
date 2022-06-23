@@ -30,6 +30,7 @@ $appText = [
     'MICRO_PHP_5' => 'Response Redirect',
     'MICRO_PHP_6' => 'Validations',
     'MICRO_PHP_7' => 'Twig Extensions',
+    'TRANSLATE' => 'É um esporte que depende do trabalho em equipe e promete espetáculo – mas raramente assim. Os campeonatos mundiais de esportes aquáticos foram palco de um resgate dramático na vida real quando a nadadora artística norte-americana Anita Alvarez teve que ser puxada da água por seu treinador depois de perder a consciência e afundar no fundo da piscina.',
 
 
     'ABOUT_P1' => 'Espero que você goste de usar este framework tanto quanto eu gostei de construí-lo. Todas as classes, com exceção da classe render, que estende o Twig, e os conceitos gerais são de CoolDeavil. Tudo foi feito com muito ❤️ e disponível em um repositório público do GitHub',

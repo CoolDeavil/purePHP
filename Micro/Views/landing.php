@@ -18,7 +18,7 @@ use API\Core\Render\PHPRender;
     <div class="col-4">
                 <h4>Lorem</h4>
         <p>Lorem ipsum dolor sit amet,  {{ bolder(consectetur adipisicing elit) }}. Ad aliquid amet consequuntur delectus dolor doloribus, enim magnam magni nihil nulla, numquam porro praesentium quis quo, ullam. Atque dicta quaerat sunt.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet consequuntur delectus dolor doloribus, enim magnam magni nihil nulla, numquam porro praesentium quis quo, ullam. Atque dicta quaerat sunt.</p>
+        <p class="trans"> {{ trans(TRANSLATE) }}</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet consequuntur delectus dolor doloribus, enim magnam magni nihil nulla, numquam  {{ bolder(consectetur adipgfhf isicing elit) }} quo, ullam. Atque dicta quaerat sunt.</p>
 
     </div>

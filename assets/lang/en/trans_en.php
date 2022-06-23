@@ -91,6 +91,7 @@ The simplicity of the index.php file reflects the all idea behind the framework.
     'BEFORE'=> 'Before',
     'STARTED'=> 'Started',
     'ENDED'=> 'Ended',
+    'TRANSLATE'=> 'It is a sport that relies on teamwork and promises spectacle – but rarely like this. The world aquatics championships were the scene of a dramatic real-life rescue when the US artistic swimmer Anita Alvarez had to be pulled from the water by her coach after losing consciousness and sinking to the bottom of the pool.',
 
 
 

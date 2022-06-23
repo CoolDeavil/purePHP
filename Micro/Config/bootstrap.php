@@ -19,15 +19,13 @@ return [
 
     NavBuilder::class => function (ContainerInterface $container) {
         $router = $container->get(RouterInterface::class);
-        $render = new PHPRender(new \API\Core\Render\PHPRenderExtensions());
+        $render = new PHPRender(new \API\Core\Render\PHPRenderExtensions($container));
         $translate = $container->get(Translate::class);
         return new NavBuilder($router, $render, $translate);
     },
-
-
     // Interfaces
     RenderInterface::class => function (ContainerInterface $container) {
-        return new PHPRender(new \API\Core\Render\PHPRenderExtensions());
+        return new PHPRender(new \API\Core\Render\PHPRenderExtensions($container));
     },
 
     RouterInterface::class => function (ContainerInterface $container) {
